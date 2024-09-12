@@ -1,0 +1,68 @@
+<script>
+function getLocalTime() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    return `${hours}:${minutes}:${seconds}`;
+}
+
+console.log("Current local time:", getLocalTime());
+function getTimeInTimeZone(timeZone) {
+    const now = new Date();
+    const options = {
+        timeZone: timeZone,
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false // Use 24-hour format
+    };
+    const formatter = new Intl.DateTimeFormat('en-US', options);
+    return formatter.format(now);
+}
+const pakistanTime = getTimeInTimeZone('Asia/Karachi');
+console.log("Current time in Pakistan:", pakistanTime);
+function getTimeDifference(date1, date2) {
+    const diffInMs = Math.abs(date2 - date1);
+    const hours = Math.floor(diffInMs / (1000 * 60 * 60));
+    const minutes = Math.floor((diffInMs % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diffInMs % (1000 * 60)) / 1000);
+    return `${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+}
+
+const date1 = new Date('2024-09-10T12:00:00Z'); // Example date
+const date2 = new Date(); // Current date and time
+console.log("Time difference:", getTimeDifference(date1, date2));
+function addHours(date, hours) {
+    const newDate = new Date(date.getTime() + hours * 60 * 60 * 1000);
+    return newDate;
+}
+
+function subtractMinutes(date, minutes) {
+    const newDate = new Date(date.getTime() - minutes * 60 * 1000);
+    return newDate;
+}
+
+const now = new Date();
+console.log("Current time:", now);
+console.log("Time after adding 3 hours:", addHours(now, 3));
+console.log("Time after subtracting 30 minutes:", subtractMinutes(now, 30));
+function formatDateTime(date) {
+    const options = {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+    };
+    return new Intl.DateTimeFormat('en-US', options).format(date);
+}
+
+const now = new Date();
+console.log("Formatted date and time:", formatDateTime(now));
+</script>

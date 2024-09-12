@@ -1,0 +1,122 @@
+body{
+    font-family:cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url(background.webp);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #afc2e2;
+   
+}
+#cotainer{
+    width: 85%;
+    margin:0 auto;
+}
+header{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color:#43415fdc;
+    padding: 0rem;
+    border-radius: 24px;
+    width: 24%;
+}
+nav ul{
+    list-style-type:none;
+    background-color:#201233ad;
+    border-radius: 8px;
+    width: 95%;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 0rem;
+    border-radius: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: #d1a3a3;
+}
+main{
+    display: grid;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin:0 auto;
+    /* margin-left: 10px; */
+    border-radius: 24px;
+    background-color: #6f6d86d2;
+    padding: 20px;
+    width: 95%;
+}
+#flex{
+    display: flex;
+}
+footer{
+    text-align: center;
+    background-color:#43415fd7;
+    border: 1px solid black;
+    border-radius: 17px;
+    margin-top: 10px;
+}
+h3{
+    background-color:#1b2432d2;
+    border-radius: 9px;
+    padding: 5px;
+    width: fit-content;
+    color: #d1a3a3;
+    text-align: center;
+}
+#one{
+    flex-basis:  75%;
+}
+#two{
+    flex-basis: 25%;
+}
+#h{
+    width: fit-content;
+}
+p{
+    font-size: large;
+}
+#Contect ul li{
+    list-style-type:none;
+}
+#backtohome {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+}
+button{
+    background-color: #201233ad;
+    border-radius: 20px;
+    padding: 10px;
+    color: #d1a3a3;
+}
+a{
+    color: #d1a3a3;
+    text-decoration: none;
+    font-size: larger;
+}
+#sticky{
+    margin: auto;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+}
+#Photoholic{
+    font-size:50px;
+}
+#follow{
+    background-color:#1b2432d2;
+    border-radius: 7px;
+    padding: 5px;
+    width: fit-content;
+    color: #d1a3a3;
+    text-align: center;
+}

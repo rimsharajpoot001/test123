@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family:cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url(background.webp);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #afc2e2;
+}
+#container{
+    width: 80%;
+    margin:0 auto;
+}
+main{
+    padding: 5px;
+}
+#heading{
+    text-align: center;
+    padding: 5px;
+    width: 20vw;
+    margin: 5px;
+    background-color: #879dc2;
+    color: #333;
+    border-radius: 21px;
+    
+    }
+    
+    header{
+        text-align:left;
+        background-color:#43415fde;
+        padding: 20px;
+        border-radius: 24px;
+        width: 100%;
+    }
+    nav ul{
+        list-style-type:none;
+        background-color:#201233ad;
+        border-radius: 8px;
+        width: 95%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 0 auto;
+    
+    }
+    nav ul li{
+        display: inline-block;
+        margin-left: 5rem;
+        border-radius: 10px;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: #d1a3a3;
+    }
+    h3{
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color:#333;
+        color:#afc2e2;
+        border-radius: 21px;
+    }
+  
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+.shoot > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shoot > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.shoot{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    overflow: hidden;
+    padding: 10px;
+    
+}
+
+#potrait{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    height: 50vh;
+    overflow: hidden;
+    padding: 10px;
+    
+}
+
+#sticky{
+    position: sticky;
+    top: 0;
+    padding: 5px;
+
+}
+#backtohome {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+    
+    
+}
+button{
+    background-color: #201233ad;
+    border-radius: 20px;
+    padding: 10px;
+    color: #d1a3a3;
+}
+a{
+    color: #d1a3a3;
+    text-decoration: none;
+}
+footer{
+    text-align: center;
+    background-color:#43415fd7;
+    border: 1px solid black;
+    border-radius: 17px;
+    margin-top: 10px;
+    padding: 10px;
+}
